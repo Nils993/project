@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+   font-family: Arial;
+    }
+  .container{
+    width: 1280px
+      margin: 0 auto;
+    
+  }
+  .page-header{
+    width: 100%;
+    background-color: #445162;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .page-header:after {
+    content:"";
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  .page-header-text{
+    color: #ffffff;
+  float: left;
+  }
+  .page-header-title{
+    font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+    display: block;
+margin: 0 0 40px 0;
+  }
+  .page-header-list{
+    font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+    margin: 0;
+    padding: 0 0 0 40px;
+    
+  }
+  .ph-item{
+    list-style-type: none;
+    position: relative;
+  }
+  .ph-item:before {
+    content:"";
+    display: block;
+    width: 25px;
+  height: 19px;
+      background-image: url(img/check_icon_349.png);
+      position: absolute;
+      top:10px ;
+      left: -38px;
+    
+  }
+  .page-header-img {
+    display: block;
+    width: 469px;
+    height: 214px;
+    background-color: #fff;
+    color: black;
+float: right; 
+  }
