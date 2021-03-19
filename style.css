@@ -61,3 +61,47 @@ margin: 0 0 40px 0;
     color: black;
 float: right; 
   }
+  .content{
+    width: 100%;
+  background-color: #fff;
+  padding: 50px;
+box-sizing: border-box;
+}
+.content :after {
+  content:"";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.About-product{
+
+
+}
+.about-product-wrp{
+float: left;
+width: 652px
+}
+.about-product-title{
+font-size: 30px;
+line-height: 36px;
+font-weight: 400;
+color: #445161;
+display: block;
+margin: 0 0 30px 0;
+
+}
+.about-product-txt{
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: #333333;
+margin: 0 0 20px 0;
+
+}
+.about-product-video{
+    display: block;
+  width: 430px;
+  height: 245px;
+  background-color: #445162;
+float: right;
+}
