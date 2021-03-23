@@ -93,6 +93,9 @@ body {
   width: 100%;
   background-color: #f5f5f5;
   padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 .dignity-title {
   font-size: 30px;
@@ -101,9 +104,7 @@ body {
   color: #445161;
   text-align: center;
   margin: 0 0 29px 0;
-}
-.dignity-text {
-  display: flex;
+  width: 100%;
 }
 .dignity-item-wrp {
   width: 50%;
@@ -122,11 +123,12 @@ body {
   color: #333333;
   display: block;
   position: relative;
+  outline: none; /* убирает обводку загаловка */
 }
 .dignity-item-title::-webkit-details-marker {
   display: none;
 }
-.dignity-item-title:before {
+details summary:before {
   content: "+";
   display: block;
   position: absolute;
@@ -139,4 +141,119 @@ body {
   top: 5px;
   left: -40px;
   line-height: 31px;
+}
+
+details[open] summary:before {
+  content: "-";
+}
+.screenshots {
+  padding: 55px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.screenshots-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #445161;
+  text-align: center;
+  margin: 0 0 35px 0;
+  width: 100%;
+}
+.screen-item {
+  margin: 0 0 30px 0;
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+}
+.screen-item figcaption {
+  width: 374px;
+  margin: -5px 0px 0px 15px;
+}
+.screen-img {
+  width: 200px;
+  height: 150px;
+  background-color: #445161;
+  display: block;
+}
+.screen-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #445161;
+  margin: 0 0 0 0;
+}
+.screen-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0 0 0;
+}
+.Reviews {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Reviews-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #445161;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0 0 11px 0;
+}
+.Reviews-item {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+.Reviews-img {
+  width: 75px;
+  height: 75px;
+  background-color: #445161;
+  border-radius: 50%;
+  margin: 3px 34px 0 0;
+}
+.Reviews-text::before {
+  content: "";
+  display: block;
+  border: 20px solid transparent;
+  border-right: 20px solid #ebebeb;
+  position: absolute;
+  top: 20px;
+  left: -37px;
+}
+.Reviews-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #333333;
+  margin: 0 0 24px 0;
+  background-color: #ebebeb;
+  position: relative;
+  padding: 20px 16px 0px 16px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  width: 483px;
+  min-height: 121px;
+}
+
+.Reviews-text-sign {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #989898;
+  display: block;
+  margin: 15px 0 16px 0;
 }
